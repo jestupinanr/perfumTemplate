@@ -6,7 +6,7 @@ import TextField from "../../form/textField";
 const Form = () => {
   const { ChangeSecondColor } = useAppContext();
   return (
-    <div className={`${ChangeSecondColor ? 'bg-primary text-white' : 'bg-white text-primary'} w-full flex flex-col rounded-t-3xl py-20 px-2 lg:px-40 lg:flex-row`}>
+    <div className={`${ChangeSecondColor ? 'bg-primary text-white' : 'bg-white text-primary'} w-full flex flex-col rounded-t-3xl py-20 px-2 lg:px-40 lg:flex-row`} id='form'>
       <div className={`${ChangeSecondColor ? 'bg-white' : 'bg-primary'} py-16 flex flex-col gap-6 px-12 rounded-3xl lg:w-1/2`}>
           <span className={`${ChangeSecondColor ? 'text-primary' : 'text-white'} text-4xl mb-8`}>Ordena Ahora</span>
           <TextField name='name' value='' handler={()=> {}} placeholder='Nombre'/>

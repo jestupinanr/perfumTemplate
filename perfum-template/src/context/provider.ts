@@ -10,4 +10,7 @@ export const appProvider: AppContextType = {
   // ChangeSecondColor
   ChangeSecondColor: false,
 
+  //showNavbar
+  showMenu: false
+
 };

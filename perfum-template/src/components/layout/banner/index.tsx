@@ -9,8 +9,8 @@ const Banner = ( { description, img, title, handleChangeSlide }: BannerProps) =>
   };
 
   return(
-    <div className='w-full flex lg:px-20'>
-      <img src={arrow} alt='arrowLeft' className='cursor-pointer brightness-0' onClick={handleChange}/>
+    <div className='w-full flex mb-20 lg:mb-0 lg:px-20' id='banner'>
+      <img src={arrow} alt='arrowLeft' className={`${ChangeSecondColor && 'brightness-0' } cursor-pointer`} onClick={handleChange}/>
       <div className={`${ChangeSecondColor ? 'text-primary' : 'text-white'} flex flex-col-reverse lg:flex-row justify-center`}>
           <div className='flex flex-col gap-5 mt-20 lg:w-1/2 lg:ml-10 lg:pr-20 lg:gap-12'>
             <span className='font-bold text-xl lg:text-4xl'>
@@ -26,7 +26,7 @@ const Banner = ( { description, img, title, handleChangeSlide }: BannerProps) =>
       </div>
       <img src={arrow} 
         alt='arrowLeft'
-        className='rotate-180 cursor-pointer brightness-0'
+        className={`${ChangeSecondColor && 'brightness-0'} rotate-180 cursor-pointer`}
         onClick={handleChange} 
         
         />

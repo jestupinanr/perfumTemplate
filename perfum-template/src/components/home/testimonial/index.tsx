@@ -1,4 +1,5 @@
 import { useAppContext } from '../../../hooks';
+import Carrousel from '../../common/carrousel';
 import CartTestimonial from '../cartTertimonial'
 
 const Testimonial = () => {
@@ -9,11 +10,12 @@ const Testimonial = () => {
         <h3 className='text-4xl font-bold'>Lorem ipsum</h3>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget nibh metus. Sed pharetra aliquam quam, id mattis est consectetur ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
       </div>
-      <div className='lg:w-1/3 lg:px-2'>
-        <CartTestimonial />
-      </div>
-      <div className='lg:w-1/3 lg:px-2'>
-        <CartTestimonial />
+      <div className='w-full lg:w-2/3 lg:px-60'>
+        <Carrousel slidesPerView={1} bulletsDirection='horizontal-banner'>
+          <CartTestimonial />
+          <CartTestimonial />
+        </Carrousel>
+        
       </div>
     </div>
   );

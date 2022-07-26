@@ -15,6 +15,9 @@ export interface AppContextType {
    // ChangeSecondColor
    ChangeSecondColor: boolean,
 
+   //showNavbar
+   showMenu: boolean;
+
 }
 
 export const appProvider: AppContextType = provider;
